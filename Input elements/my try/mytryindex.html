@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My try at this</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mytryStyles.css" />
+  </head>
+  <body>
+    <header><h1>Contact us</h1></header>
+    <main>
+      <form action="/my try/mytryindex.html" method="get">
+      <section>
+        <h2>How can we help you?</h2>
+        <ul>
+          <li>
+            <label for="yourname">Your name</label>
+            <input type="text" name="your-name" id="yourname" required />
+          </li>
+          <li>
+            <label for="youremail">Your email</label>
+            <input type="email" name="your-email" id="youremail" required />
+          </li>
+          <li>
+            <label for="yournumber">Your phone number</label>
+            <input
+              type="number"
+              name="your-number"
+              id="yournumber"
+              required
+              min="5"
+            />
+          </li>
+          <li>
+            <label for="yourmessage">Your message</label>
+            <textarea
+              name="your-message"
+              id="yourmessage"
+              rows="8"
+            ></textarea>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div>
+          <label for="inquiry">How did you find us?</label>
+          <select name="inquiry" id="inquiry">
+            <option value="here">By here</option>
+            <option value="there">By there</option>
+            <option value="somewhere">By somewhere else</option>
+          </select>
+        </div>
+      </section>
+      <section>
+        <h2>How should we reply?</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="callme" value="phone" />
+            <label for="callme">Call me</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="sendemail" value="email">
+            <label for="sendemail">Send me an email</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="dontreply" value="reply">
+            <label for="dontreply">Don´t reply</label>
+          </li>
+        </ul>
+      </section>
+    <section class="terms">
+        <input type="checkbox" name="accept-terms" id="acceptterms" required>
+        <label for="acceptterms">Accept Terms</label>
+     </section>
+
+     <section class="button-container">
+         <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+     </section>
+    </main>
+</form>
+  </body>
+</html>
